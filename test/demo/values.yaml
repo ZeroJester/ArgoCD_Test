@@ -1,10 +1,10 @@
 pod1:
   image: nginx
-  replicas: 2
+  replicas: 1
   port: 80
 
 
 pod2:
   image: busybox
-  replicas: 2
-  port: 8080
+  replicas: 1
+  port: 8100
