@@ -1,4 +1,4 @@
-apiVersion: v2
+{% comment %} apiVersion: v2
 kind: Pod
 metadata:
   name: {{ .Release.Name }}-pod2
@@ -8,4 +8,4 @@ spec:
     - name: pod2-container
       image: {{ .Values.pod2.image }}
       ports:
-        - containerPort: {{ .Values.pod2.port }}
+        - containerPort: {{ .Values.pod2.port }} {% endcomment %}

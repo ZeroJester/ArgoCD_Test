@@ -1,4 +1,4 @@
 pod1:
   image: nginx
-  replicas: 4
+  replicas: 2
   port: 80
