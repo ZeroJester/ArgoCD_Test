@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: {{ .Release.Name }}-pod1
+spec:
+  replicas: {{ .Values.pod1.replicas }}
+  containers:
+    - name: pod1-container
+      image: {{ .Values.pod1.image }}
+      ports:
+        - containerPort: {{ .Values.pod1.port }}
